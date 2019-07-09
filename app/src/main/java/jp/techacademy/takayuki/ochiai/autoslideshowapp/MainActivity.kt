@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         IS_AUTO = !IS_AUTO
 
         // スライドショー実行/停止
-        doSlideShow()
+        doSlideshow()
 
         // 「再生/停止」ボタンの表示切り替え
         if (IS_AUTO) {
@@ -173,7 +173,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     // スライドショー再生・停止
-    private fun doSlideShow() {
+    private fun doSlideshow() {
         if (IS_AUTO && mTimer == null) {
             mTimer = Timer()
             mTimer!!.schedule(object : TimerTask() {
